@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- js代码需要写到script标签中，tpye的默认值是javascript -->
+    <script type="text/javascript">
+        // 输出语句
+        alert("欢迎来到js的世界");
+
+
+        document.write("这条文本能看到吗");
+
+        // 只能开发者看到
+        console.log("据说是显示在console控制台的文字");
+    </script>
+    <!-- 用外部js文件 -->
+    <!-- 外部script标签用了，内部就不能使用了 -->
+     <script type="text/javascript" src="./1.js"></script>
+</head>
+<body>
+    <!-- 当我们点击代码时候，才会执行 -->
+    <button onclick="alert('讨厌，你点我干嘛')">点我一下</button>
+
+    <!-- 用超链接写javascript -->
+    <a href="javascript:alert('让你点你就点')">你也点我一下</a>
+</body>
+</html>
