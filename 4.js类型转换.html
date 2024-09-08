@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /* 
+        1.toString()方法可以转换数据类型，不能转换Null和Undefined
+        var a = 123;
+        a.toString();
+
+        2.调用String()函数也可以转换,可以转换Null和Undefined
+        var a = null;
+        a = String(a);
+
+        3.使用Number()函数转换为Number类型
+        */
+        var a = "123";
+        a = Number(a);
+        console.log(typeof a);
+        console.log(a);
+        // true转换为1 false转换成0
+        // 只有空格转换成0
+        // 字符串中有非数字转换为NaN
+        // parseInt(),parseFloat()这两个将String转换为Number但只取一部分，整数或者小数
+        // 对于非String的值，parseInt()会先转换成String再转换成Number
+        // 4.可以调用Boolean()函数把其他类型转换为Boolean类型
+        // 除了0,NaN,空字符串,Null,Undefined,返回"false",其余都返回"ture"
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
