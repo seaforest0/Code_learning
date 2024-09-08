@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /*
+        1.算术运算符会先把类型转换成Number再进行计算
+        -NaN与任何数运算都为NaN
+        -任何数与字符串运算都为字符串，字符串相加
+        可以通过一个+来做隐性的类型转换，如a = 12 + +"12",则a = 24
+
+        2.&& ! || 会将其先转换为布尔值再运算，并且返回原值类型
+          &&其中，当第一个为true会检查第二个值，当第一个值就为false就不会检查第二个
+          两个都为true返回第二个，有一个false就返回false的值，两个false返回第二个值
+
+          ||其中，当第一个值为false会检查第二个值，当第一个值为true就不会检查第二个
+          如果第一个值为true直接返回第一个值，如果第一个值为false直接返回第二个值
+        */
+        // 3.比较大小时< > ,非数字的先转换成数字再比较，比较字符串时候只比较第一位的Unicode编码值
+        // 4.==做相等运算，比较前会自动做类型转换
+        //   ===做全等运算，比较时会比较值和类型是否相等
+        // 5.条件语句 ? 语句一 : 语句二 ;
+        //   如果条件为true执行语句一，否则执行语句二
+        {
+        var a = 10;
+        var b = 20;
+        var c = 30;
+        var max = a > b ? alert("a大") : alert("b大");
+        }
+        // 这是一个代码块，只具有分组的作用，结尾没有分号
+      </script> 
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // var score = prompt("input your socre");
+        // prompt()的返回值是String，如果不是String则用户只能输入数字而不能输入其他
+        // if(score > 100 || score < 0 || isNaN(score)){
+        //     alert("wrong")
+        // }
+        // else{
+        //     if(score == 100){
+        //         alert("a bwm");
+        //     }
+        //     else if(score >= 80 && score < 100){
+        //         alert("iphone");
+        //     }
+        //     else if(score >= 60 && score < 80){
+        //         alert("a reference book");
+        //     }
+        //     else{
+        //         alert("nothing");
+        //     }
+        // }
+        var num1 = 10;
+        var num2 = 20;
+        var num3 = 30;
+        var max = 0;
+        var second = 0;
+        if(num1 > num2 && num1 > num3){
+            if(num2 > num3){
+                max = num1;
+                second = num2;
+            }
+            else{
+                max = num1;
+                second = num3;
+            }
+        }
+        else if(num2 > num1 && num2 > num3){
+            if(num1 > num3){
+                max = num2;
+                second = num1;
+            }
+            else{
+                max = num2;
+                second = num3;
+            }
+        }
+        else (num3 > num1 && num3 > num2)
+        {
+            if(num1 > num2){
+                max = num3;
+                second = num1;
+            }
+            else{
+                max = num3;
+                second = num2;
+            }
+        }
+        alert(max);
+        alert(second);
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
